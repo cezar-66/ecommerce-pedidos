@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "54899a60-16f7-46cd-9675-df8a8c87743b",
+		"name": "Desafio backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7102584"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImpvYW9AZW1haWwuY29tIiwiZXhwIjoxNzM4NjkwMDUyfQ.xBKjSrJhaGERSgdzPi4VRqp8aLU6KMlCtH8QI_Hpjrw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"joao@email.com\",\r\n    \"password\": \"senha123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImpvYW9AZW1haWwuY29tIiwiZXhwIjoxNzM4Njg5NzYzfQ.DVD4tTB0391U8cwzvczfTje5-58BTIDuKKXeZ0PfSO4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cezar Marçal\",\r\n    \"email\": \"cezarmarcal@live.com\",\r\n    \"password\": \"senha123\",\r\n    \"perfil\": \"USER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validar Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInBlcm1pc3Npb25zIjoiQURNSU4iLCJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsImV4cCI6MTczODY5NTczNH0.02jF5WmfzobUwsfJamt1-ZamZEqco3-BALKf3jY3lx8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Criar pedido",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoLWFwaSIsInBlcm1pc3Npb25zIjoiQURNSU4iLCJzdWIiOiJqb2FvQGVtYWlsLmNvbSIsImV4cCI6MTczODcwMDA5M30.mews3rVKA5gZJqLjVPuLhw5fWU-Xzq1HwYL7SW_83cs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"itens\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 2,\r\n      \"precoUnitario\": 5000.00\r\n    },\r\n    {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 1,\r\n      \"precoUnitario\": 3000.00\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pedido/criarPedido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido",
+								"criarPedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
