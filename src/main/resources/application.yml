@@ -1,9 +1,12 @@
 spring:
   kafka:
-    bootstrap-servers: kafka:9092  # Use o nome do serviço Kafka no Docker Compose
+    bootstrap-servers: kafka:9092
     consumer:
       group-id: ecommerce-pedido-group
       auto-offset-reset: earliest
     producer:
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    topics:
+      order-created: order.created
+      order-paid: order.paid
