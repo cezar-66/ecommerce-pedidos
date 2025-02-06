@@ -65,7 +65,7 @@ O objetivo deste projeto é construir um sistema de gerenciamento de pedidos e p
       ```bash
       docker-compose up
       ```
-    - Isso vai levantar os containers necessários para o Kafka e Elasticsearch, evitando a instalação manual.
+    - Isso vai levantar os containers necessários para o Kafka, MySQL, e Elasticsearch, evitando a instalação manual.
 3. **Dados de Teste**: Existe uma massa de dados dentro da pasta `resources/db/migration` que deve ser executada para fins de testes.
 4. **Postman**: Um arquivo de configuração do Postman está disponível na pasta `config`, contendo as rotas e exemplos de requisições para testes.
 
