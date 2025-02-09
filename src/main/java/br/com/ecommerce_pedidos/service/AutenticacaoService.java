@@ -1,10 +1,10 @@
 package br.com.ecommerce_pedidos.service;
 
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import br.com.ecommerce_pedidos.dto.request.LoginRequestDTO;
 import br.com.ecommerce_pedidos.dto.request.CadastrarUsuarioRequestDTO;
 import br.com.ecommerce_pedidos.dto.response.ResponseDTO;
-import br.com.ecommerce_pedidos.model.enumeration.Perfil;
+import br.com.ecommerce_pedidos.domain.enumeration.Perfil;
 import br.com.ecommerce_pedidos.config.security.TokenService;
 import br.com.ecommerce_pedidos.repository.UsuarioRepository;
 import lombok.AllArgsConstructor;

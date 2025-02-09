@@ -1,6 +1,6 @@
 package br.com.ecommerce_pedidos.repository;
 
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import org.springframework.data.elasticsearch.annotations.Query;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;

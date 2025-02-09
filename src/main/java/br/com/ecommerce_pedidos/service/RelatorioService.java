@@ -1,7 +1,7 @@
 package br.com.ecommerce_pedidos.service;
 
 import br.com.ecommerce_pedidos.repository.UsuarioRepository;
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

@@ -1,6 +1,6 @@
 package br.com.ecommerce_pedidos.config.security;
 
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;

@@ -1,7 +1,7 @@
 package br.com.ecommerce_pedidos.config.security;
 
 
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import br.com.ecommerce_pedidos.repository.UsuarioRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

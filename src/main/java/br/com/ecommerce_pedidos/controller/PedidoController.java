@@ -1,8 +1,8 @@
 package br.com.ecommerce_pedidos.controller;
 
 import br.com.ecommerce_pedidos.dto.request.PedidoRequest;
-import br.com.ecommerce_pedidos.model.Pedido;
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Pedido;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import br.com.ecommerce_pedidos.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

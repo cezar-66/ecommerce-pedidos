@@ -1,8 +1,8 @@
 package br.com.ecommerce_pedidos.config.kafka;
 
 import br.com.ecommerce_pedidos.config.exceptions.ProdutoNaoEncontradoException;
-import br.com.ecommerce_pedidos.model.Pedido;
-import br.com.ecommerce_pedidos.model.Produto;
+import br.com.ecommerce_pedidos.domain.Pedido;
+import br.com.ecommerce_pedidos.domain.Produto;
 import br.com.ecommerce_pedidos.repository.ProdutoRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

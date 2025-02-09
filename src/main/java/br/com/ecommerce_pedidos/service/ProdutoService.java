@@ -1,7 +1,7 @@
 package br.com.ecommerce_pedidos.service;
 
 import br.com.ecommerce_pedidos.config.exceptions.ProdutoNaoEncontradoException;
-import br.com.ecommerce_pedidos.model.Produto;
+import br.com.ecommerce_pedidos.domain.Produto;
 import br.com.ecommerce_pedidos.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

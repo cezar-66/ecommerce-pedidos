@@ -1,4 +1,4 @@
-package br.com.ecommerce_pedidos.model.enumeration;
+package br.com.ecommerce_pedidos.domain.enumeration;
 
 public enum StatusPedido {
     PENDENTE,

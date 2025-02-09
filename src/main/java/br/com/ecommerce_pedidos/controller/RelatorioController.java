@@ -1,6 +1,6 @@
 package br.com.ecommerce_pedidos.controller;
 
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import br.com.ecommerce_pedidos.service.RelatorioService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

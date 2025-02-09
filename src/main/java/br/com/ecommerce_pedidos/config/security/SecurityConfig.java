@@ -1,6 +1,6 @@
 package br.com.ecommerce_pedidos.config.security;
 
-import br.com.ecommerce_pedidos.model.enumeration.Perfil;
+import br.com.ecommerce_pedidos.domain.enumeration.Perfil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

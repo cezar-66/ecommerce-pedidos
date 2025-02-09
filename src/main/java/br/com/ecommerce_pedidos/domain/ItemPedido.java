@@ -1,4 +1,4 @@
-package br.com.ecommerce_pedidos.model;
+package br.com.ecommerce_pedidos.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.math.BigDecimal;
 
@@ -17,12 +19,19 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Builder
 public class ItemPedido {
+
     @Id
     private Long id;
 
+    @Field(type = FieldType.Long)
     private Long pedidoId;
+
+    @Field(type = FieldType.Long)
     private Long produtoId;
 
+    @Field(type = FieldType.Integer)
     private Integer quantidade;
+
+    @Field(type = FieldType.Double)
     private BigDecimal precoUnitario;
 }

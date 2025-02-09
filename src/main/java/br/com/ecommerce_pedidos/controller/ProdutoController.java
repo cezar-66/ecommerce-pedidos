@@ -1,6 +1,6 @@
 package br.com.ecommerce_pedidos.controller;
 
-import br.com.ecommerce_pedidos.model.Produto;
+import br.com.ecommerce_pedidos.domain.Produto;
 import br.com.ecommerce_pedidos.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

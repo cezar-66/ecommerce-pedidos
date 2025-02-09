@@ -1,7 +1,7 @@
 package br.com.ecommerce_pedidos.config.security;
 
 
-import br.com.ecommerce_pedidos.model.Usuario;
+import br.com.ecommerce_pedidos.domain.Usuario;
 import br.com.ecommerce_pedidos.repository.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
